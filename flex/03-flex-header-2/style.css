@@ -12,6 +12,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* display: flex is used to make a flex container of flex items; align-items: center is used to make sure that there is even amount of space vertically for each flex item */
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  padding: 8px;
 }
 
 .profile-image {
@@ -20,6 +26,9 @@ body {
   border-radius: 50%;
   width: 48px;
   height:  48px;
+
+  /* margin-left is used to make the margin between the profile image and the notification button smaller */
+  margin-left: 12px;
 }
 
 .logo {
@@ -27,6 +36,9 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+
+  /* margin-left is used to make a margin between the left side of the webpage and the logo */ 
+
 }
 
 button {
@@ -35,14 +47,26 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+ 
+  /* margin-left: auto is used to automatically make more margin space on the left of the buttons*/
+  margin-left: auto;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+
+  /* margin adds some space between the links */
+  margin: 12px;
+
 }
 
 ul {
   list-style-type: none;
+
+  /* display: flex is used to make a horizontal flex container for the links; padding-left adds some padding between the logo and the lists  */
+  display: flex;
+  padding-left: 8px;
 }
+
